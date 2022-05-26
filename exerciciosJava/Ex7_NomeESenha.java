@@ -11,22 +11,18 @@ public class Ex7_NomeESenha {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
 		
-		// 1) Informe o seu login
-        System.out.println("Nome: ");
-        String nome = scan.nextLine();
-        // 2) Informe a sua senha
-        System.out.println("Senha: ");
-        String senha = scan.next();
+       String nome,senha;
         
         while(true) {
             System.out.println("Nome: ");
             nome = scan.next();
-            if (senha.equals(nome)) {
-            	System.out.print("Nome e senha não podem ser iguais digite novamente...");
-            };
-
             System.out.println("Senha: ");
             senha = scan.next();
+            if (nome.equals(senha)) {
+            	System.out.print("Nome e senha não podem ser iguals digite novamente...");
+            }
+
+            System.out.println("Usuario logado!");
         }
     }
 		
