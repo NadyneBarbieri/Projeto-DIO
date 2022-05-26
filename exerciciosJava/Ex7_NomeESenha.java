@@ -16,14 +16,17 @@ public class Ex7_NomeESenha {
         String nome = scan.nextLine();
         // 2) Informe a sua senha
         System.out.println("Senha: ");
-        String senha = scan.nextLine();
+        String senha = scan.next();
         
-        
-        if(nome.equals(senha)){
-            System.out.printf("Sua senha deve ser diferente do nome digite novamente.");
-        }else{
-            System.out.println("Usuario logado com sucesso!");
-            
+        while(true) {
+            System.out.println("Nome: ");
+            nome = scan.next();
+            if (senha.equals(nome)) {
+            	System.out.print("Nome e senha não podem ser iguais digite novamente...");
+            };
+
+            System.out.println("Senha: ");
+            senha = scan.next();
         }
     }
 		
